@@ -16,8 +16,8 @@ PTSource MiniVMDOS is evolution in the lineage of DOS operating systems. This mo
  [![Maintenance](/images/maintained.svg)](https://wiki.ptsource.eu/soft/ptminivmdos/start) [![You can download here.](/images/version-7-red.svg)](https://wiki.ptsource.eu/files) [![You can download here.](/images/download-here-green.svg)](https://wiki.ptsource.eu/files) [![Help here.](/images/docs-here-blue.svg)](https://wiki.ptsource.eu/soft/ptminivmdos/start)
 
 ## Screenshots
-<img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/01.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/02.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/03.PNG" width="33%">
-<img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/04.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/05.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/06.PNG" width="33%">
+<img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/01B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/02B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/03B.PNG" width="33%">
+<img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/04B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/05B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/06B.PNG" width="33%">
 
 ## Features 
 
