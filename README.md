@@ -27,8 +27,9 @@ PTSource MiniVMDOS is evolution in the lineage of DOS operating systems. This mo
 * Printing to Windows printers
 * Transparent web and network access
 * UNIX style commands
-* VIM Editor
+* VIM Editor with CTAGS and XXD
 * MiniVMDOS Commander
+* PGP
 * Lynx,WGET,FTP and more...
 * Windows 3.11 Support
 
