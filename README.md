@@ -27,6 +27,8 @@ PTSource MiniVMDOS is evolution in the lineage of DOS operating systems. This mo
 * Printing to Windows printers
 * Transparent web and network access
 * Windows 3.11 Support
+
+
 **Info :** Use login root and and password root in first login.
 
 **Note :** This software does not use a digitally signed installer, so
