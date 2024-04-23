@@ -30,6 +30,7 @@ PTSource MiniVMDOS is evolution in the lineage of DOS operating systems. This mo
 * VIM Editor with CTAGS and XXD
 * MiniVMDOS Commander
 * PGP
+* Dialog
 * Lynx,WGET,FTP and more...
 * Windows 3.11 Support
 
