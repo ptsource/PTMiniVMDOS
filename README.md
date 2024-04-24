@@ -29,6 +29,7 @@ PTSource MiniVMDOS is evolution in the lineage of DOS operating systems. This mo
 * UNIX style commands
 * VIM Editor with CTAGS and XXD
 * MiniVMDOS Commander
+* Bash
 * PGP
 * Dialog
 * Lynx,WGET,FTP and more...
