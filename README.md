@@ -19,6 +19,14 @@ PTSource MiniVMDOS is evolution in the lineage of DOS operating systems. This mo
 <img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/01B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/02B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/03B.PNG" width="33%">
 <img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/04B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/05B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/06B.PNG" width="33%">
 
+## Hardware
+* Intel Pentium Processor with MMX Technology 300 MHz, 66 MHz FSB
+* 64Mb SDRAM
+* Sound Blaster 16 Sound Card
+* Ne2000 Network Card
+* 2 Hard Drives
+* 2 1.44 Mb Floppy Drives
+
 ## Features 
 
 * Runs contained inside [PTSource MiniVM](https://wiki.ptsource.eu/soft/ptminivm/start)
