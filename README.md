@@ -25,7 +25,8 @@ PTSource MiniVMDOS is evolution in the lineage of DOS operating systems. This mo
 * Sound Blaster 16 Sound Card
 * Ne2000 Network Card
 * 2 Hard Drives
-* 2 1.44 Mb Floppy Drives
+* 1 CDROM Drive (ISO Files)
+* 2 1.44 Mb Floppy Drives (IMG, IMA, FDI Files)
 
 ## Features 
 
