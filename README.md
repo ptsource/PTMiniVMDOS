@@ -5,7 +5,7 @@ DOS, or Disk Operating System, holds a significant place in computing history as
 # PTSource MiniVMDOS
 ### Current version 7 updated 20/04/2024 for Windows
 
-PTSource MiniVMDOS is evolution in the lineage of DOS operating systems. This modern iteration integrates transparent web and network access seamlessly into its familiar command-line interface, empowering users with unparalleled connectivity. Moreover, it introduces native support for printing to Windows printers, streamlining document management across platforms. With robust network support, users can effortlessly collaborate and share resources in real-time, enhancing productivity and efficiency. Additionally, this innovative DOS OS introduces a multiuser environment, enabling concurrent access for multiple users, fostering collaboration and facilitating shared computing resources.
+PTSource MiniVMDOS is a evolution in the lineage of DOS operating systems for Windows x86 and x64. This modern iteration integrates transparent web and network access seamlessly into its familiar command-line interface, empowering users with unparalleled connectivity. Moreover, it introduces native support for printing to Windows printers, streamlining document management across platforms. With robust network support, users can effortlessly collaborate and share resources in real-time, enhancing productivity and efficiency. Additionally, this innovative DOS OS introduces a multiuser environment, enabling concurrent access for multiple users, fostering collaboration and facilitating shared computing resources.
 
 |  System requirements  |
 |         :---:         | 
