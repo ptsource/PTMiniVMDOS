@@ -19,9 +19,9 @@ PTSource MiniVMDOS is a evolution in the lineage of DOS operating systems for Wi
 <img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/01B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/02B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/03B.PNG" width="33%">
 <img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/04B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/05B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/06B.PNG" width="33%">
 
-## Hardware
+## Emulated Hardware
 * Intel Pentium Processor with MMX Technology 300 MHz, 66 MHz FSB
-* 64Mb SDRAM
+* 128Mb SDRAM
 * Sound Blaster 16 Sound Card
 * Ne2000 Network Card
 * 2 Hard Drives
@@ -39,9 +39,9 @@ PTSource MiniVMDOS is a evolution in the lineage of DOS operating systems for Wi
 * VIM Editor with CTAGS and XXD
 * MiniVMDOS Commander
 * Bash
-* PGP
+* Mutt with PGP
 * Dialog
-* Lynx,WGET,FTP and more...
+* Lynx,Gopher,WGET,FTP and more...
 * Windows 3.11 Support
 
 
