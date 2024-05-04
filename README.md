@@ -7,6 +7,10 @@ DOS, or Disk Operating System, holds a significant place in computing history as
 
 PTSource MiniVMDOS is a evolution in the lineage of DOS operating systems for Windows x86 and x64. This modern iteration integrates transparent web and network access seamlessly into its familiar command-line interface, empowering users with unparalleled connectivity. Moreover, it introduces native support for printing to Windows printers, streamlining document management across platforms. With robust network support, users can effortlessly collaborate and share resources in real-time, enhancing productivity and efficiency.
 
+# Why a DOS?
+
+Using DOS, or Disk Operating System, offers several benefits despite being an older technology. Its simplicity provides users with a straightforward interface, making it easy to learn and use, even for those unfamiliar with computing. DOS requires minimal system resources, making it lightweight and ideal for running on older hardware or in embedded systems where efficiency is paramount. Additionally, DOS facilitates direct access to hardware, allowing for greater control and customization, which is advantageous for specialized applications or troubleshooting purposes. Its reliability and stability have stood the test of time, ensuring consistent performance for basic computing tasks. Overall, DOS remains a valuable tool for certain use cases, offering efficiency, reliability, and simplicity in operation.
+
 |  System requirements  |
 |         :---:         | 
 | Windows 8.1, 10 or 11 platforms arch x86 or x64. | 
