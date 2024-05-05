@@ -9,7 +9,7 @@ Using DOS, or Disk Operating System, offers several benefits despite being an ol
 # PTSource MiniVMDOS
 ### Current version 7 updated 20/04/2024 for Windows
 
-PTSource MiniVMDOS is a evolution in the lineage of DOS operating systems for Windows x86 and x64. This modern iteration integrates transparent web and network access seamlessly into its familiar command-line interface, empowering users with unparalleled connectivity. Moreover, it introduces native support for printing to Windows printers, streamlining document management across platforms. With robust network support, users can effortlessly collaborate and share resources in real-time, enhancing productivity and efficiency.
+PTSource MiniVMDOS is a evolution in the lineage of DOS operating systems for Windows x86 and x64. This modern iteration integrates transparent web and network access seamlessly into its familiar command-line interface, empowering users with unparalleled connectivity. Moreover, it introduces native support for printing text to Windows printers, streamlining document management across platforms. With robust network support, users can effortlessly collaborate and share resources in real-time, enhancing productivity and efficiency.
 
 |  System requirements  |
 |         :---:         | 
@@ -37,7 +37,7 @@ PTSource MiniVMDOS is a evolution in the lineage of DOS operating systems for Wi
 * Runs contained inside [PTSource MiniVM](https://wiki.ptsource.eu/soft/ptminivm/start)
 * [PTSource PTSGET](https://wiki.ptsource.eu/soft/ptsget/start) included
 * Network support and multiuser environment
-* Printing to Windows printers
+* Printing text to Windows printers
 * Transparent web and network access
 * UNIX style commands
 * VIM Editor with CTAGS and XXD
