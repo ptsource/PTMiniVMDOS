@@ -48,7 +48,7 @@ PTSource MiniVMDOS is a evolution in the lineage of DOS operating systems for Wi
 
 **Info :** Use login root and and password root in first login.
 
-# Why use DOS at the present time?
+## Why use DOS at the present time?
 
 Using DOS, or Disk Operating System, offers several benefits despite being an older technology. Its simplicity provides users with a straightforward interface, making it easy to learn and use, even for those unfamiliar with computing. DOS requires minimal system resources, making it lightweight and ideal for running on older hardware or in embedded systems where efficiency is paramount. Additionally, DOS facilitates direct access to hardware, allowing for greater control and customization, which is advantageous for specialized applications or troubleshooting purposes. Its reliability and stability have stood the test of time, ensuring consistent performance for basic computing tasks. Overall, DOS remains a valuable tool for certain use cases, offering efficiency, reliability, and simplicity in operation.
 
