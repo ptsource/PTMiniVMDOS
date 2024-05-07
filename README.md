@@ -35,6 +35,8 @@ PTSource MiniVMDOS is a evolution in the lineage of DOS operating systems for Wi
 * Network support and multiuser environment
 * Printing text to Windows printers
 * Transparent web and network access
+* DPMI support and VDM based multitasking
+* Joe Editor
 * UNIX style commands
 * VIM Editor with CTAGS and XXD
 * MiniVMDOS Commander
@@ -51,6 +53,18 @@ PTSource MiniVMDOS is a evolution in the lineage of DOS operating systems for Wi
 ## Why use DOS at the present time?
 
 Using DOS, or Disk Operating System, offers several benefits despite being an older technology. Its simplicity provides users with a straightforward interface, making it easy to learn and use, even for those unfamiliar with computing. DOS requires minimal system resources, making it lightweight and ideal for running on older hardware or in embedded systems where efficiency is paramount. Additionally, DOS facilitates direct access to hardware, allowing for greater control and customization, which is advantageous for specialized applications or troubleshooting purposes. Its reliability and stability have stood the test of time, ensuring consistent performance for basic computing tasks. Overall, DOS remains a valuable tool for certain use cases, offering efficiency, reliability, and simplicity in operation.
+
+## The focus of PTSource MiniVMDOS and the differences with DosBox , VDos and FreeDos
+
+PTSource MiniVMDOS, DOSBox, vDos, and FreeDOS are distinct solutions within the realm of DOS emulation and operating systems, each offering unique features and functionalities.
+
+PTSource MiniVMDOS is tailored specifically for programming and networking, designed to evoke the nostalgic charm of yesteryears' computing while seamlessly integrating modern conveniences. Is virtual environment is meticulously configured, offering a seamless experience akin to tinkering with real hardware. Every keystroke resonates with the spirit of traditional DOS programming, yet the system auto-configures effortlessly, sparing users the headaches of manual setup. Emulating authentic hardware nuances, it provides an immersive journey into the realm of retro programming, where creativity knows no bounds, and innovation flourishes in the timeless allure of classic computing.
+
+DOSBox is a versatile emulator focused primarily on gameson modern platforms with broad compatibility, albeit sometimes requiring configuration. Although is excellence in games it is slow while compiling software and it often crashes when linking or running protected mode (DPMI) software.
+
+vDos targets business users, providing enhanced support for running legacy DOS applications within a Windows environment, integrating features such as printer and file system support. vDos is fast on compiling and linking but does not support protected mode (DPMI) software.
+
+FreeDOS is a standalone operating system compatible with MS-DOS programs while offering modern features like multitasking and FAT32 support, appealing to users seeking a complete DOS experience with contemporary capabilities. Each option caters to specific needs and preferences, ranging from general-purpose emulation to specialized regional support and standalone operating system functionality.
 
 **Note :** This software does not use a digitally signed installer, so
 you might get a warning. You should dismiss it and continue.
