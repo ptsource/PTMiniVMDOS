@@ -60,7 +60,7 @@ PTSource MiniVMDOS, DOSBox, vDos, and FreeDOS are distinct solutions within the 
 
 PTSource MiniVMDOS is tailored specifically for programming and networking, designed to evoke the nostalgic charm of yesteryears' computing while seamlessly integrating modern conveniences. Is virtual environment is meticulously configured, offering a seamless experience akin to tinkering with real hardware. Every keystroke resonates with the spirit of traditional DOS programming, yet the system auto-configures effortlessly, sparing users the headaches of manual setup. Emulating authentic hardware nuances, it provides an immersive journey into the realm of retro programming, where creativity knows no bounds, and innovation flourishes in the timeless allure of classic computing.
 
-DOSBox is a versatile emulator focused primarily on gameson modern platforms with broad compatibility, albeit sometimes requiring configuration. Although is excellence in games it is slow while compiling software and it often crashes when linking or running protected mode (DPMI) software.
+DOSBox is a versatile emulator focused primarily on games on modern platforms with broad compatibility, albeit sometimes requiring configuration. Although is excellence in games it is slow while compiling software and it often crashes when linking or running protected mode (DPMI) software.
 
 vDos targets business users, providing enhanced support for running legacy DOS applications within a Windows environment, integrating features such as printer and file system support. vDos is fast on compiling and linking but does not support protected mode (DPMI) software.
 
