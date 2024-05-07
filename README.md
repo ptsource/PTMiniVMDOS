@@ -64,7 +64,9 @@ DOSBox is a versatile emulator focused primarily on gameson modern platforms wit
 
 vDos targets business users, providing enhanced support for running legacy DOS applications within a Windows environment, integrating features such as printer and file system support. vDos is fast on compiling and linking but does not support protected mode (DPMI) software.
 
-FreeDOS is a standalone operating system compatible with MS-DOS programs while offering modern features like multitasking and FAT32 support, appealing to users seeking a complete DOS experience with contemporary capabilities. Each option caters to specific needs and preferences, ranging from general-purpose emulation to specialized regional support and standalone operating system functionality.
+FreeDOS is a standalone operating system compatible with DOS programs while offering modern features like multitasking and FAT32 support, appealing to users seeking a complete DOS experience with contemporary capabilities. 
+
+Each option caters to specific needs and preferences, ranging from general-purpose emulation to specialized regional support and standalone operating system functionality.
 
 **Note :** This software does not use a digitally signed installer, so
 you might get a warning. You should dismiss it and continue.
