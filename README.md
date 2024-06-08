@@ -20,7 +20,7 @@ PTSource MiniVMDOS is a evolution in the lineage of DOS operating systems for Wi
 <img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/04B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/05B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/06B.PNG" width="33%">
 
 ## Emulated Hardware
-* Intel Pentium Processor with MMX Technology at 300 MHz
+* Intel Pentium Processor at 300 MHz
 * 64Mb SDRAM (default) 128Mb SDRAM (using the --extramem switch)
 * Serial Mouse
 * Sound Blaster 16 Sound Card
