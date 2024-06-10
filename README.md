@@ -39,15 +39,16 @@ PTSource MiniVMDOS is a evolution in the lineage of DOS operating systems for Wi
 * [PTSource Imager](https://wiki.ptsource.eu/soft/ptminivm/imager) hard drive image creator included
 * [PTSource Tools Disk](https://wiki.ptsource.eu/soft/ptminivm/toolsdisk) hard drive tools included
 * [PTSource Printer](https://wiki.ptsource.eu/soft/ptminivm/printer) manager for host included
+* X11
 * DPMI support and VDM based multitasking
-* Joe Editor
 * UNIX style commands
+* Joe Editor
 * VIM Editor with CTAGS and XXD
 * MiniVMDOS Commander
 * Bash
 * Mutt
 * PGP with PGPShell
-* Dialog
+* Dialog, BBOX
 * Lynx, Gopher, WGET, FTP and more...
 * Windows 3.11 Support
 
