@@ -32,7 +32,7 @@ PTSource MiniVMDOS is a evolution in the lineage of DOS operating systems for Wi
 ## Features 
 
 * Runs contained inside [PTSource MiniVM](https://wiki.ptsource.eu/soft/ptminivm/start)
-* [PTSource PTSGET](https://wiki.ptsource.eu/soft/ptsget/start) included
+* [PTSource PTSGET](https://wiki.ptsource.eu/soft/ptsget/start) package manager included
 * Network support and multiuser environment
 * Printing text to Windows printers
 * Transparent web and network access
