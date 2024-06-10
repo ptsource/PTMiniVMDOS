@@ -46,7 +46,7 @@ PTSource MiniVMDOS is a evolution in the lineage of DOS operating systems for Wi
 * Joe Editor
 * VIM Editor with CTAGS and XXD
 * MiniVMDOS Commander
-* Bash and CMD interpreters
+* Bash, CSH and CMD interpreters
 * Mutt email client
 * PGP with PGPShell encryption
 * Dialog, BBOX
