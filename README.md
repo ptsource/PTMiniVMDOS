@@ -50,7 +50,7 @@ PTSource MiniVMDOS is a evolution in the lineage of DOS operating systems for Wi
 * MiniVMDOS Commander
 * Bash, CSH and CMD interpreters
 * Mutt email client
-* PGP with PGPShell encryption
+* PGPShell with PGP encryption
 * Dialog, BBOX
 * Lynx, Gopher, WGET, FTP and more...
 * Windows 3.11 Support
