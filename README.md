@@ -41,8 +41,8 @@ PTSource MiniVMDOS is a evolution in the lineage of DOS operating systems for Wi
 * [PTSource Printer](https://wiki.ptsource.eu/soft/ptminivm/printer) manager for host included
 * [PTSource Guides](https://wiki.ptsource.eu/soft/ptminivmdos/guides) reader and compiler included
 * [PTSource Basic](https://wiki.ptsource.eu/soft/ptminivmdos/basic) interpreter included
+* [XSystem](https://wiki.ptsource.eu/soft/ptminivmdos/xsystem) (GEOS based)
 * Precision Pointer Mouse Driver
-* X System
 * DPMI support and VDM based multitasking
 * UNIX style commands
 * Joe Editor
