@@ -42,17 +42,18 @@ PTSource MiniVMDOS is a evolution in the lineage of DOS operating systems for Wi
 * [PTSource Guides](https://wiki.ptsource.eu/soft/ptminivmdos/guides) reader and compiler included
 * [PTSource Basic](https://wiki.ptsource.eu/soft/ptminivmdos/basic) interpreter included
 * [PTSource XSystem](https://wiki.ptsource.eu/soft/ptminivmdos/xsystem) included
-* Precision Pointer Mouse Driver
-* DPMI support and VDM based multitasking
-* UNIX style commands
-* Joe Editor
-* VIM Editor with CTAGS and XXD
 * MiniVMDOS Commander
+* MiniVMDOS Command RECALL
+* MiniVMDOS Precision Pointer Mouse Driver
+* DPMI support and VDM based multitasking
+* UNIX and CMD style commands
+* Joe and VIM Editor with CTAGS and XXD
+* Python
 * Bash, CSH and CMD interpreters
 * Mutt email client
 * PGPShell with PGP encryption
 * Dialog, BBOX
-* Lynx, Gopher, WGET, FTP and more...
+* Lynx, Gopher, WGET, FTP, IRC and more...
 * Windows 3.11 Support
 
 
