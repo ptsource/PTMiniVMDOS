@@ -54,6 +54,7 @@ PTSource MiniVMDOS is a evolution in the lineage of DOS operating systems for Wi
 * PGPShell with PGP encryption
 * Dialog, BBOX
 * Lynx, Gopher, WGET, FTP, IRC and more...
+* 100% Compatible with MS-DOS, PC-DOS, DR-DOS
 * Windows 3.11 Support
 
 
