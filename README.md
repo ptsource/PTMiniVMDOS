@@ -40,7 +40,7 @@ PTSource MiniVMDOS is a operating system in the lineage of DOS operating systems
 * [PTSource Tools Disk](https://wiki.ptsource.eu/soft/ptminivm/toolsdisk) hard drive tools included
 * [PTSource Printer](https://wiki.ptsource.eu/soft/ptminivm/printer) manager for host included
 * [PTSource Guides](https://wiki.ptsource.eu/soft/ptminivmdos/guides) reader and compiler included
-* [PTSource Basic](https://wiki.ptsource.eu/soft/ptminivmdos/basic) interpreter included
+* [PTSource Basic](https://wiki.ptsource.eu/softdos/ptbasic/start) interpreter and compiler included
 * [PTSource XSystem](https://wiki.ptsource.eu/soft/ptminivmdos/xsystem) included
 * MiniVMDOS Commander
 * MiniVMDOS Command RECALL
