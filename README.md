@@ -44,6 +44,7 @@ PTSource MiniVMDOS is a operating system in the lineage of DOS operating systems
 * [PTSource XSystem](https://wiki.ptsource.eu/soft/ptminivmdos/xsystem) included
 * MiniVMDOS Commander
 * MiniVMDOS Command RECALL
+* MiniVMDOS User Manager
 * MiniVMDOS Precision Pointer Mouse Driver
 * DPMI support and VDM based multitasking
 * UNIX and CMD style commands
