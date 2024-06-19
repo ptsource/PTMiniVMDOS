@@ -49,6 +49,7 @@ PTSource MiniVMDOS is a operating system in the lineage of DOS operating systems
 * DPMI support and VDM based multitasking
 * UNIX and CMD style commands
 * Joe and VIM Editor with CTAGS and XXD
+* NASM
 * Python
 * Bash, CSH and CMD interpreters
 * Mutt email client
