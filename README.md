@@ -13,7 +13,7 @@ PTSource MiniVMDOS is a operating system in the lineage of DOS operating systems
 
 ## Download
 
- [![Maintenance](/images/maintained.svg)](https://wiki.ptsource.eu/soft/ptminivmdos/start) [![You can download here.](/images/version-7-red.svg)](https://wiki.ptsource.eu/files) [![You can download here.](/images/download-here-green.svg)](https://wiki.ptsource.eu/files) [![Help here.](/images/docs-here-blue.svg)](https://wiki.ptsource.eu/soft/ptminivmdos/start)
+ [![Maintenance](/images/maintained.svg)](https://wiki.ptsource.eu/soft/mvmdos/start) [![You can download here.](/images/version-7-red.svg)](https://wiki.ptsource.eu/files) [![You can download here.](/images/download-here-green.svg)](https://wiki.ptsource.eu/files) [![Help here.](/images/docs-here-blue.svg)](https://wiki.ptsource.eu/soft/mvmdos/start)
 
 ## Screenshots
 <img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/01B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/02B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/03B.PNG" width="33%">
@@ -39,9 +39,9 @@ PTSource MiniVMDOS is a operating system in the lineage of DOS operating systems
 * [PTSource Imager](https://wiki.ptsource.eu/soft/ptminivm/imager) hard drive image creator included
 * [PTSource Tools Disk](https://wiki.ptsource.eu/soft/ptminivm/toolsdisk) hard drive tools included
 * [PTSource Printer](https://wiki.ptsource.eu/soft/ptminivm/printer) manager for host included
-* [PTSource Guides](https://wiki.ptsource.eu/soft/ptminivmdos/guides) reader and compiler included
+* [PTSource Guides](https://wiki.ptsource.eu/soft/mvmdos/guides) reader and compiler included
 * [PTSource Basic](https://wiki.ptsource.eu/softdos/ptbasic/start) interpreter and compiler included
-* [PTSource XSystem](https://wiki.ptsource.eu/soft/ptminivmdos/xsystem) included
+* [PTSource XSystem](https://wiki.ptsource.eu/soft/mvmdos/xsystem) included
 * MiniVMDOS Commander
 * MiniVMDOS Command RECALL
 * MiniVMDOS User Manager
@@ -82,5 +82,5 @@ you might get a warning. You should dismiss it and continue.
 
 ## Support
 
-[![Visit homepage.](/images/homepage-here-yellowgreen.svg)](https://wiki.ptsource.eu/soft/ptminivmdos/start)
+[![Visit homepage.](/images/homepage-here-yellowgreen.svg)](https://wiki.ptsource.eu/soft/mvmdos/start)
 
