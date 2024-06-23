@@ -5,7 +5,7 @@ DOS, or Disk Operating System, holds a significant place in computing history as
 # PTSource MiniVMDOS
 ### Current version 7 updated 20/06/2024 for Windows
 
-PTSource MiniVMDOS is a professional operating system in the lineage of DOS operating systems intended to run legacy software running inside [PTSource MiniVM](https://wiki.ptsource.eu/soft/ptminivm/start) for Windows x86 and x64. This iteration integrates transparent web and network access seamlessly into its familiar command-line interface. Moreover, it introduces native support for printing text to Windows printers, streamlining document management across platforms. With network support, users can effortlessly collaborate and share resources in real-time, enhancing productivity and efficiency.
+PTSource MiniVMDOS is a professional operating system in the lineage of DOS operating systems intended to run legacy software inside [PTSource MiniVM](https://wiki.ptsource.eu/soft/ptminivm/start) for Windows x86 and x64. This iteration integrates transparent web and network access seamlessly into its familiar command-line interface. Moreover, it introduces native support for printing text to Windows printers, streamlining document management across platforms. With network support, users can effortlessly collaborate and share resources in real-time, enhancing productivity and efficiency.
 
 |  System requirements  |
 |         :---:         | 
