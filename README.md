@@ -22,6 +22,7 @@ PTSource MiniVMDOS is a professional operating system in the lineage of DOS oper
 ## Emulated Hardware
 * Intel Pentium MMX Processor at 580 MHz
 * 64Mb SDRAM (default) 128Mb SDRAM (using the --extramem switch)
+* S3 ViRGE graphics chipset
 * Serial Mouse
 * Sound Blaster 16 Sound Card
 * Ne2000 Network Card
