@@ -1,0 +1,117 @@
+#
+#       Makefile for DEIT-WATTCP TCP/IP kernal
+#
+# 06-Sep-93 lr - final cleanup
+# 07-Jul-92 lr
+#
+# Files:
+#
+# asmpkt.asm    assembler packet driver interface
+# makefile      this file
+# pc_cbrk.c     handles control-break
+# pcarp.c       arp handler
+# pcbootp.c     bootp daemon
+# pcbsd.c       bsd stuff
+# pcbuf.c       some buffer-handling routines
+# config.c      reads configuration
+# pcdbug.c      debugging support ???
+# pcicmp.c      icmp handler
+# pcping.c      ping routines
+# pcpkt.c       C packet driver interface
+# pcrecv.c1     receive routines ??? (unused)
+# pcsed.c       ethernet driver routines. Maybe merge with pcpkt.c
+# sock_ini.c    socket stuff. Maybe merge with other socket stuff
+# sock_prn.c    printf/scanf on sockets.
+# udp_dom.c     domain name server
+# udp_nds.c     other domain-related stuff
+# tcp.c         main tcp routines
+# socket.c	BSD socket emulation
+############################
+# switches:
+#       define the ones you want in the CFLAGS definition...
+#
+#       debug           - turn on debugging code (DB2)
+#
+# Options to avoid:
+#       -G[1|2] generates 186/286 code; avoid for libraries unless you
+#       want maximum speed.
+#       -qc     avoid because the compiler is broken.
+#
+#       
+# DEBUGS=  -Od -W4 -Zi -Zd -Ddebug
+# DEBUGS= -Od -W4
+DEBUGS= -Ogilt -W4 -Gs 
+INCDIR= ../include
+#CFLAGS= $(DEBUGS) -r- -DMSDOS -IL:\borlandc\include -I..\include
+#CFLAGS= $(DEBUGS) -DMSDOS -Og -Ol -Oi -Ot -Gs -I..\include
+CFLAGS= $(DEBUGS) -DMSDOS  -I$(INCDIR)
+MODELS=-AS
+MODELL=-AL
+
+# Assembler flags
+#AFLAGS=-Mx -t -Zi -Zd -I..\elib
+AFLAGS=-Mx -t  -I$(INCDIR)
+AMODELS=-dFUNC_L=0
+AMODELL=-dFUNC_L=1
+
+# Define PC-specific include file
+
+#.c.h:
+#       cl -c -Zg $(MODELS) $(CFLAGS) $*.c >$*.h
+
+.c.obj:
+        cl -c $(MODELS) $(CFLAGS) $*.c
+        lib ..\lib\wattcpsm -+$*;
+#	cl -c $(MODELL) $(CFLAGS) $*.c
+#	lib ..\lib\wattcplg -+$*;
+
+.asm.obj:
+        masm $(AFLAGS) $(AMODELS) $*;
+        lib ..\lib\wattcpsm -+$*;
+#	masm $(AFLAGS) $(AMODELL) $*;
+#	lib ..\lib\wattcplg -+$*;
+
+
+objs=   \
+	socket.obj\
+	asmpkt.obj \
+	tcp.obj \
+	pc_cbrk.obj \
+	pcarp.obj \
+	pcbootp.obj \
+	pcbsd.obj \
+	pcbuf.obj \
+	config.obj \
+	pcdbug.obj \
+	pcicmp.obj \
+	pcping.obj \
+	pcpkt.obj \
+	pcsed.obj \
+	sock_prn.obj \
+	sock_ini.obj \
+	udp_dom.obj \
+	udp_nds.obj
+
+..\lib\wattcpsm.lib:    $(objs)
+	echo done
+
+
+socket.obj:     socket.c        $(INCDIR)/tcp.h
+asmpkt.obj:     asmpkt.asm      $(INCDIR)/masmdefs.hsm  $(INCDIR)/model.hsm
+tcp.obj:        tcp.c           $(INCDIR)/tcp.h
+pc_cbrk.obj:    pc_cbrk.c       $(INCDIR)/tcp.h
+pcarp.obj:      pcarp.c         $(INCDIR)/tcp.h
+pcbootp.obj:    pcbootp.c       $(INCDIR)/tcp.h         $(INCDIR)/bootp.h
+pcbsd.obj:      pcbsd.c         $(INCDIR)/tcp.h 
+pcbuf.obj:      pcbuf.c         $(INCDIR)/tcp.h
+config.obj:     config.c        $(INCDIR)/tcp.h
+pcdbug.obj:     pcdbug.c        $(INCDIR)/tcp.h
+pcicmp.obj:     pcicmp.c        $(INCDIR)/tcp.h
+pcping.obj:     pcping.c        $(INCDIR)/tcp.h
+pcpkt.obj:      pcpkt.c         $(INCDIR)/tcp.h
+pcsed.obj:      pcsed.c         $(INCDIR)/tcp.h         $(INCDIR)/ethdev.h
+sock_ini.obj:   sock_ini.c      $(INCDIR)/tcp.h
+sock_prn.obj:   sock_prn.c      $(INCDIR)/tcp.h
+udp_dom.obj:    udp_dom.c       $(INCDIR)/tcp.h
+udp_nds.obj:    udp_nds.c       $(INCDIR)/tcp.h
+# pcrecv.obj:     pcrecv.c        $(INCDIR)/tcp.h

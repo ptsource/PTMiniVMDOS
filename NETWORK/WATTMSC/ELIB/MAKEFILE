@@ -1,0 +1,60 @@
+#
+# File: makefile
+#
+# 16-Jun-92 lr
+#
+# ELIB - library of MSC/TC compatible functions
+#        and old MASM/new MASM/TASM compatible too
+# 23-dec-91 lr Ported to MS C 6.0
+#
+# Files:
+#   cout.c      : print diagnostic messages
+#   inchksum.asm: compute checksums
+#   intel.asm   : do type conversions
+#   macros.hsm  : macros for assembly files
+#   makefile    : this makefile
+#   masmdefs.hsm: macros to use C parameters. Suspect nobody uses them
+#   model.hsm   : other macros for assembler
+#   qmove.asm   : quick move routines. Nobody uses any more
+#   qmsg.c      : diagnostic with direct console writes.
+#   timeout.asm : timer handling routines
+#
+#
+# Currently this makes a library of small model functions,
+# to make large model, change MODEL=-ml and AFLAGS=... -DFUNC_L=1
+#
+#CFLAGS= -a -d -f- -G -O -Z -DMSDOS -IL:\borlandc\include
+#CFLAGS= -qc -W4 -Od -DMSDOS -Zi -Zd -I../include
+INCDIR= ..\include
+CFLAGS= -W4 -Od -DMSDOS -I$(INCDIR)
+
+MODELS=-AS
+MODELL=-AL
+
+# Assembler flags
+AFLAGS=-Mx -t -Zi -Zd -I$(INCDIR)
+AMODELS=-dFUNC_L=0
+AMODELL=-dFUNC_L=1
+
+# Define PC-specific include file
+
+.c.obj:
+	cl -c $(MODELS) $(CFLAGS) $*.c
+	lib ..\lib\wattcpsm -+$*;
+	cl -c $(MODELL) $(CFLAGS) $*.c
+	lib ..\lib\wattcplg -+$*;
+
+.asm.obj:
+	masm $(AFLAGS) $(AMODELS) $*;
+	lib ..\lib\wattcpsm -+$*;
+	masm $(AFLAGS) $(AMODELL) $*;
+	lib ..\lib\wattcplg -+$*;
+
+start: elib.lib
+
+elib.lib: \
+	cout.obj \
+	intel.obj \
+	inchksum.obj \
+	qmsg.obj \
+	timeout.obj

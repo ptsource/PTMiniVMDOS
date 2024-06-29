@@ -1,0 +1,60 @@
+#
+#       Makefile for Waterloo TCP sample applications
+#
+
+DEBUG=E        # set to D for disable, E for enable
+MODEL=L        # set to L for large, S for small
+
+#
+#
+# auto configure section
+#
+#
+
+!IF "$(DEBUG)" == "E"
+IDEBUG= -W4
+TEXTDEBUG=enabled
+!ELSE
+IDEBUG= -Od -W4
+TEXTDEBUG=disabled
+!ENDIF
+
+!IF "$(MODEL)" == "L"
+CMODEL=-AL
+CLIB=..\lib\wattcplg.lib
+TEXTMODEL=large
+!ELSE
+CMODEL=-AS
+CLIB=..\lib\wattcpsm.lib
+TEXTMODEL=small
+!ENDIF
+
+CFLAGS= $(CMODEL) $(IDEBUG) -I..\include
+CC= cl /F 8000 $(CFLAGS)
+
+#
+#
+#  list of executables
+#
+#
+
+.c.exe:
+	$(CC) $*.c $(CLIB)
+
+
+exes.arc: ping.exe finger.exe tcpinfo.exe rexec.exe 
+	echo done $(TEXTMODEL) make with debugging $(TEXTDEBUG)
+
+
+ping.exe: ping.c $(CLIB)
+	$(CC) ping.c $(CLIB)
+
+finger.exe: finger.c $(CLIB)
+	$(CC) finger.c $(CLIB)
+
+tcpinfo.exe: tcpinfo.c $(CLIB)
+	$(CC) tcpinfo.c $(CLIB)
+
+rexec.exe: rexec.c $(CLIB)
+	$(CC) rexec.c $(CLIB)
+

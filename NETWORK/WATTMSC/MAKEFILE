@@ -1,0 +1,35 @@
+#
+#       Makefile for DEIT-WATTCP TCP/IP kernel
+#
+# 27-Aug-93 lr
+#       cleaned up
+#
+# switches:
+#       define the ones you want in the CFLAGS definition...
+#
+all:
+	- md lib
+	cd elib
+	nmake
+	cd ..\src
+	nmake
+#       cd ..\apps
+#       nmake
+	cd ..
+
+clean:
+	- del lib\*.lib
+	- del lib\*.bak
+	- rd lib
+	- del elib\*.obj
+	- del src\*.obj
+	- del apps\*.obj
+	- del apps\*.exe
+
+uxclean:
+	- rm -r lib */*.obj */*.exe
+
+watt.tar.Z: uxclean
+	- rm watt.tar.*
+	tar cvf watt.tar makefile include src elib apps
+	compress watt.tar

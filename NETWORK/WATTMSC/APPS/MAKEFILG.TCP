@@ -1,0 +1,69 @@
+#
+#       Makefile for Waterloo TCP sample applications
+#
+
+DEBUG=E        # set to D for disable, E for enable
+MODEL=L        # set to L for large, S for small
+
+#
+#
+# auto configure section
+#
+#
+
+!IF "$(DEBUG)" == "E"
+IDEBUG= -qc -Od -W4
+TEXTDEBUG=enabled
+!ELSE
+IDEBUG= -qc -Od -W4
+TEXTDEBUG=disabled
+!ENDIF
+
+!IF "$(MODEL)" == "L"
+CMODEL=-AL
+CLIB=..\lib\wattcplg.lib
+TEXTMODEL=large
+!ELSE
+CMODEL=-AS
+CLIB=..\lib\wattcpsm.lib
+TEXTMODEL=small
+!ENDIF
+
+CFLAGS= $(CMODEL) $(IDEBUG) -I..\include
+CC= cl /F 8000 $(CFLAGS)
+
+#
+#
+#  list of executables
+#
+#
+
+.c.exe:
+	$(CC) $*.c $(CLIB)
+
+
+exes.arc: stacli.exe stasrvr.exe
+	echo done $(TEXTMODEL) make with debugging $(TEXTDEBUG)
+
+stacli.exe: stacli.c $(CLIB)
+	$(CC) stacli.c $(CLIB)
+
+stasrvr.exe: stasrvr.c $(CLIB)
+	$(CC) stasrvr.c $(CLIB)
+
+
+multisrv.exe: multisrv.c $(CLIB)
+	$(CC)  multisrv.c $(CLIB)
+
+
+multicli.exe: multicli.c $(CLIB)
+	$(CC)  multicli.c $(CLIB)
+
+server.exe: server.c $(CLIB)
+	$(CC)  server.c $(CLIB)
+
+client.exe: client.c $(CLIB)
+	$(CC)  client.c $(CLIB)
+
+doserver.exe: doserver.c $(CLIB)
+	$(CC)  doserver.c $(CLIB)

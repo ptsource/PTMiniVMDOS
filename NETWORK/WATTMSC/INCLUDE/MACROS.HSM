@@ -1,0 +1,192 @@
+; File: macros.hsm
+;
+; 16-Jun-92 lr
+;
+; Macros for assembler files
+;
+; define FUNC_L for far functions, PTR_L for far pointers
+; @AB is the offset of the first parameter on the stack
+;
+
+IF      FUNC_L
+@AB     EQU     6
+; @ab     EQU     6	; not used
+ELSE
+@AB     EQU     4
+; @ab     EQU     4	; not used
+ENDIF
+
+if      FUNC_L
+%OUT    <Far Functions>
+else
+%OUT    <Near Functions>
+endif
+if      PTR_L
+%OUT    <Far Pointers>
+else
+%OUT    <Near Pointers>
+endif
+
+; cextrn is used to inform the assembler of C routines
+;
+
+cextrn  macro   WARG1
+if      FUNC_L
+EXTRN   _&WARG1&:FAR
+else
+EXTRN   _&WARG1&:NEAR
+endif
+        endm
+
+; ccall is used to call extern C routines
+;
+
+ccall   macro   WARG1
+if      FUNC_L
+        CALL    FAR PTR _&WARG1&
+else
+        CALL    _&WARG1&
+endif
+        endm
+
+; cpublic is used to make ASM routines callable from C
+; it also produces the prolog
+;
+
+cpublic macro   WARG1
+public  _&WARG1&
+if      FUNC_L
+_&WARG1&    PROC    FAR
+else
+_&WARG1&    PROC    NEAR
+endif
+        PUSH    BP
+        MOV     BP,SP
+	PUSH	DI
+	PUSH	SI
+        endm
+
+; cproc is similar to cpublic, but only produces the declaration
+;
+
+cproc   macro   WARG1
+public  _&WARG1&
+if      FUNC_L
+_&WARG1&    PROC    FAR
+else
+_&WARG1&    PROC    NEAR
+endif
+        endm
+
+; cendp 
+cendp	macro	WARG1
+public	_&WARG1&
+if      FUNC_L
+_&WARG1&	ENDP
+else
+_&WARG1&	ENDP
+endif
+	endm
+
+; clabel is used to generate a symbol for the assembler,
+; e.g. an alias for a function name (this is the case of intel,
+; and format conversion routines)
+
+clabel	macro	WARG1
+public  _&WARG1&
+if      FUNC_L
+_&WARG1&    LABEL    FAR
+else
+_&WARG1&    LABEL    NEAR
+endif
+        endm
+
+creturn macro   WARG1
+	POP	SI
+	POP	DI
+        MOV     SP,BP
+        POP     BP
+if      FUNC_L
+        RET	; actually ret far
+else
+        RET	; actually ret near
+endif
+_&WARG1&    ENDP
+        endm
+
+cstart  macro   WARG1,WARG2
+if      FUNC_L
+&WARG1&_TEXT    SEGMENT WARG2
+else
+_TEXT       SEGMENT WARG2
+endif
+        endm
+
+cend     macro   WARG1
+if      FUNC_L
+&WARG1&_TEXT        ENDS
+else
+_TEXT   ENDS
+endif
+        endm
+
+codedef macro   WARG1,WARG2
+if      FUNC_L
+&WARG1&_TEXT    SEGMENT BYTE WARG2 PUBLIC 'CODE'
+&WARG1&_TEXT    ENDS
+        ASSUME  CS: &WARG1&_TEXT
+else
+_TEXT   SEGMENT BYTE WARG2 PUBLIC 'CODE'
+_TEXT   ENDS
+        ASSUME  CS: _TEXT
+endif
+        endm
+
+datadef macro WARG1
+_DATA   SEGMENT  WORD WARG1 PUBLIC 'DATA'
+_DATA   ENDS
+_BSS    SEGMENT  WORD WARG1 PUBLIC 'BSS'
+_BSS    ENDS
+
+DGROUP  GROUP   _BSS,   _DATA
+        ASSUME  DS: DGROUP, SS: DGROUP, ES: DGROUP
+        endm
+
+bssstart    macro WARG1
+_BSS    SEGMENT WARG1
+        endm
+
+bssend  macro
+_BSS    ENDS
+        endm
+farbssstart    macro
+FAR_BSS SEGMENT
+        endm
+
+farbssend  macro
+FAR_BSS ENDS
+        endm
+
+fardatastart    macro
+FAR_DATA SEGMENT
+        endm
+
+fardataend  macro
+FAR_DATA ENDS
+        endm
+
+datastart    macro WARG1
+_DATA SEGMENT WARG1
+        endm
+
+dataend  macro
+_DATA ENDS
+        endm
+
+conststart    macro WARG1
+        endm
+
+constend  macro
+        endm
+
+; end of file macros.hsm
