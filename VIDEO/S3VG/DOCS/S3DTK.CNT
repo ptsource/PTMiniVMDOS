@@ -1,0 +1,60 @@
+:Base s3dtk.hlp
+:Title S3d Toolkit
+1 Start=s_helptoc
+1 Introduction
+2 Introduction=s_Introduction
+2 Purpose of This Document=s_Purpose_of_This_Document
+2 Overview of the Toolkit=s_Overview_of_the_Toolkit
+2 Where to Get Help from S3=s_Where_to_Get_Help_from_S3
+1 S3d Toolkit Library
+2 S3d Toolkit Library=s_S3d_Toolkit_Library
+2 Memory Management=s_Memory_Management
+2 Geometric Primitives=s_Geometric_Primitives
+2 Multithreading=s_Multithreading
+2 State Variable Reference
+3 State Variable Reference=s_State_Variable_Reference
+3 S3DTK_ALPHABLENDING =S3DTK_ALPHABLENDING
+3 S3DTK_CLIPPING_AREA=S3DTK_CLIPPING_AREA
+3 S3DTK_D_LEVEL_SUPPLIED=S3DTK_D_LEVEL_SUPPLIED
+3 S3DTK_DISPLAYADDRESSUPDATED =S3DTK_DISPLAYADDRESSUPDATED
+3 S3DTK_DISPLAYSURFACE =S3DTK_DISPLAYSURFACE
+3 S3DTK_DRAWSURFACE =S3DTK_DRAWSURFACE
+3 S3DTK_FOGCOLOR =S3DTK_FOGCOLOR
+3 S3DTK_GRAPHICS_ENGINE_IDLE=S3DTK_GRAPHICS_ENGINE_IDLE
+3 S3DTK_RENDERINGTYPE =S3DTK_RENDERINGTYPE
+3 S3DTK_TEXBLENDINGMODE =S3DTK_TEXBLENDINGMODE
+3 S3DTK_TEXFILTERINGMODE =S3DTK_TEXFILTERINGMODE
+3 S3DTK_TEXTUREACTIVE =S3DTK_TEXTUREACTIVE
+3 S3DTK_VERSION =S3DTK_VERSION
+3 S3DTK_VIDEOMEMORYADDRESS =S3DTK_VIDEOMEMORYADDRESS
+3 S3DTK_VIDEOMEMORYSIZE =S3DTK_VIDEOMEMORYSIZE
+3 S3DTK_VIDEOMODE =S3DTK_VIDEOMODE
+3 S3DTK_ZBUFFERCOMPAREMODE =S3DTK_ZBUFFERCOMPAREMODE
+3 S3DTK_ZBUFFERENABLE =S3DTK_ZBUFFERENABLE
+3 S3DTK_ZBUFFERSURFACE =S3DTK_ZBUFFERSURFACE
+3 S3DTK_ZBUFFERUPDATEENABLE =S3DTK_ZBUFFERUPDATEENABLE
+2 Function Reference
+3 Function Reference=s_Function_Reference
+3 S3DTK_BitBlt =S3DTK_BitBlt
+3 S3DTK_BitBltTransparent =S3DTK_BitBltTransparent
+3 S3DTK_CreateRenderer =S3DTK_CreateRenderer
+3 S3DTK_DestroyRenderer =S3DTK_DestroyRenderer
+3 S3DTK_EnterCritical =S3DTK_EnterCritical
+3 S3DTK_ExitLib =S3DTK_ExitLib
+3 S3DTK_GetLastError =S3DTK_GetLastError
+3 S3DTK_GetState =S3DTK_GetState
+3 S3DTK_InitLib =S3DTK_InitLib
+3 S3DTK_LinearToPhysical =S3DTK_LinearToPhysical
+3 S3DTK_PhysicalToLinear =S3DTK_PhysicalToLinear
+3 S3DTK_RectFill =S3DTK_RectFill
+3 S3DTK_ReleaseCritical =S3DTK_ReleaseCritical
+3 S3DTK_SetState =S3DTK_SetState
+3 S3DTK_TriangleSet =S3DTK_TriangleSet
+3 S3DTK_TriangleSetEx	=S3DTK_TriangleSetEx
+1 Utilities
+2 Utilities=s_Utilities
+2 Texture File Creation=s_Texture_File_Creation
+2 Texture File Format=s_Texture_File_Format
+2 Texture Viewer=s_Texture_Viewer
+1 Driver Redistribution to End Users
+2 Driver Redistribution to End Users=s_Driver_Redistribution_to_End_Users
