@@ -1,0 +1,43 @@
+Following are the updates to S3D ToolKit Version 2.6:
+
+1. Two new primitives have been added to S3DTK_TriangleSet and S3DTK_TriangleSetEx
+
+    S3DTK_LINE                 // Draw 3D Lines
+    S3DTK_POINT                // Draw 3D Points
+
+
+    ULONG ( *S3DTK_TriangleSet )( ULONG FAR * pVertexSet, 
+                                  ULONG NumVertexes, 
+                                  ULONG SetType );
+
+    Description:
+
+        Renders a set of primitives.
+
+        pVertexSet         Pointer to an array of pointers to vertices 
+                           (S3D_LPVERTEX_LIT or S3DTK_LPVERTEX_TEX).
+
+        NumVertexes        Number of pointers in vertex array.
+
+        SetType            S3DTK_TRILIST
+                           S3DTK_TRISTRIP
+                           S3DTK_TRIFAN
+                           S3DTK_LINE
+                           S3DTK_POINT
+
+    S3D_LINE:    Every line is defined by a pair of vertices. 
+                 W entry of the first vertex defines the width of the line.
+    
+    S3D_POINT:   Every point is defined by one vertex. 
+                 W entry of the vertex defines the width of the point.
+
+
+
+2. S3D TollKit Version 2.6 have been updated to support ViRGE GX/2 and Virge/MX
+
+3. New D3D sample. This is a very basic sample. The idea is extend this sample to show how to
+   use all the Direct3d features in the next releases of SDK. Keep checking our developre web-site
+   for more information.
+4. Document on Direct3d Alpha Blending & Transparency on Virge family. See "d3dalpha.doc'
+   in "docs" directory.
+
