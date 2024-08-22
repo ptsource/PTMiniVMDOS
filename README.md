@@ -26,7 +26,7 @@ PTSource MiniVMDOS is a professional operating system in the lineage of DOS oper
 * Serial Mouse
 * Sound Blaster 16 Sound Card
 * Ne2000 Network Card
-* 3 Hard Drives
+* 3 Hard Drives (RAW Disk Image format)
 * 1 CDROM Drive (ISO Files)
 * 2 2.88 Mb Floppy Drives (IMG, IMA, FDI Files)
 
