@@ -37,9 +37,9 @@ PTSource MiniVMDOS is a professional operating system in the lineage of DOS oper
 * Network support and multiuser environment
 * Printing text to Windows printers
 * Transparent web and network access
-* [PTSource Imager](https://wiki.ptsource.eu/soft/ptminivm/imgtools)  hard drive image creator included
-* [PTSource Image Converter](https://wiki.ptsource.eu/soft/ptminivm/imgtools)  hard drive image converter included
-* [PTSource Printer](https://wiki.ptsource.eu/soft/ptminivm/printer) manager for host included
+* [PTSource Imager](https://wiki.ptsource.eu/soft/ptminivm/utilities)  hard drive image creator included
+* [PTSource Image Converter](https://wiki.ptsource.eu/soft/ptminivm/utilities)  hard drive image converter included
+* [PTSource Printer](https://wiki.ptsource.eu/soft/ptminivm/utilities) manager for host included
 * [PTSource Tools Disk](https://wiki.ptsource.eu/soft/mvmdos/toolsdisk) hard drive tools included
 * [PTSource Guides](https://wiki.ptsource.eu/soft/mvmdos/guides) reader and compiler included
 * [PTSource Basic](https://wiki.ptsource.eu/filesdos) interpreter and compiler included
