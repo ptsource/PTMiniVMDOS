@@ -13,7 +13,7 @@ PTSource MiniVMDOS is a professional operating system in the lineage of DOS oper
 
 ## Download
 
- [![Maintenance](/images/maintained.svg)](https://wiki.ptsource.eu/soft/mvmdos/start) [![You can download here.](/images/version-7-red.svg)](https://wiki.ptsource.eu/fileswin) [![You can download here.](/images/download-here-green.svg)](https://wiki.ptsource.eu/fileswin) [![Help here.](/images/docs-here-blue.svg)](https://wiki.ptsource.eu/soft/mvmdos/start)
+ [![Maintenance](/images/maintained.svg)](https://wiki.ptsource.eu/soft/mvmdos/start) [![You can download here.](/images/version-7-red.svg)](https://wiki.ptsource.eu/files_windows) [![You can download here.](/images/download-here-green.svg)](https://wiki.ptsource.eu/files_windows) [![Help here.](/images/docs-here-blue.svg)](https://wiki.ptsource.eu/soft/mvmdos/start)
 
 ## Screenshots
 <img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/01B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/02B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/03B.PNG" width="33%">
