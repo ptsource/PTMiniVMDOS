@@ -1,0 +1,17 @@
+# Makefile for TESTHI program
+# options for building TESTHI with Microsoft C have been commented
+# out.
+
+# Directory where libraries are
+LIB=C:\USR\DEVEL\TC3\LIB
+#LIB=\c600\lib
+
+testhi.exe: testhi.obj
+	 tlink $(LIB)\c0s testhi hi,testhi.exe,,\
+			       $(LIB)\cs $(LIB)\maths
+#	link /co testhi hi,,,$(LIB)\llibce.lib;
+
+.c.obj:
+	tcc -c -ms -v -w-pia $<
+#	cl /c /AL /Zi $<
+

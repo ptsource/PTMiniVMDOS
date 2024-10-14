@@ -1,0 +1,123 @@
+
+	 User's Manual for the Extended Memory Interface Library
+
+	 The Extended Memory Interface Library gives C programmers of
+	 DOS applications access to extended memory by interfacing
+	 with the extended memory manager.  It will let your programs 
+         access to extended memory on any machine with a memory manager
+	 installed, including Windows 3.
+
+	 There are several advantages to using the Interface Library.
+	 First and foremost, it makes extended memory available to the
+	 DOS programmer.  Second, the access is "polite": a DOS
+	 application can access extended memory even when running in a
+	 DOS shell under Windows.
+
+	 hi.h		C header file for the library
+	 hi.hpp 	Turbo C++ header file for the library
+	 hi.obj 	FAR code object module for the library
+	 makefile	Makefile to build testhi.exe
+	 testhi.prj	Turbo C++ .PRJ file to build testhi.exe
+	 testhi.c	C source file to demonstrate how to use the
+			library
+
+	 The Library consists of a header file and an object module.
+	 The object is FAR-callable, so the functions have all been
+	 declared "far" in the header file.  The object has been
+	 tested for use with Microsoft C and Turbo C and C++.  To use
+	 it, you must link against hi.obj.  This may be accomplished
+	 by adding "hi.obj" to the Project in the Turbo C++ IDE, or
+	 adding "hi.obj" to the linker command line.  TESTHI.PRJ and
+	 MAKEFILE illustrate each technique.
+
+	 The hi.hpp header file has been included for C++ users.  It
+	 declares the functions with a "C" qualifier so the C++
+	 compiler knows not to mangle the function names.  If you are
+	 using C++, you should include hi.hpp rather than hi.h.
+
+
+        Using The Library
+
+	 Extended memory locations are specified as handle/offset
+	 pairs.  The handle is a return value from himalloc(); it is a
+	 protected mode segment descriptor, and specifies a block of
+	 extended memory.  Certain functions which operate on blocks,
+	 such as hifree(), hilock(), and hiunlock(), take only the
+	 handle.  The offset is used to pinpoint a location in
+	 extended memory; it is passed to hi2real() and real2hi().
+
+	 The function interface to the library is described below.
+	 The source files (testhi.c and hi.h) provide a lot of
+	 guidance as well.
+
+	 int pinghi();
+		This function returns nonzero if a memory manager is 
+             installed.
+
+	 void hiinit();
+		This function must be called once before any other
+	     function in the library (except pinghi()).
+
+	 unsigned long hicontig();
+		Returns the size of the largest contiguous chunk of
+	     memory.
+
+	 unsigned long himemavl();
+		Returns the total amount of extended memory available.
+
+	 unsigned himalloc(unsigned long size);
+		This function allocates extended memory and returns a
+	     handle (actually a protected-mode segment descriptor) to
+	     it.  Returns 0 if the memory cannot be allocated.
+
+	 void hifree(unsigned handle);
+		This function frees memory allocated by himalloc().
+
+	 hilock(unsigned handle);
+	 hiunlock(unsigned handle);
+		These functions lock (write-protect) and unlock the
+	     memory pointed to by the given handle.
+
+	 hi2real(void far *dest,
+		 unsigned src,
+		 unsigned long offset,
+		 unsigned count);
+	 real2hi(unsigned dest,
+		 unsigned long offset,
+		 void far *src,
+		 unsigned count);
+
+		These functions copy to/from extended memory.  real2hi
+	 copies from the DOS memory location specified by src to an
+	 extended memory location specified by the dest/offset pair.
+	 hi2real copies from an extended memory location specified by
+	 the src/offset pair to the DOS memory location specified by
+	 dest.
+
+	 Return value: 1 if successful, 0 if not successful.
+
+	 IMPORTANT: THE BYTE COUNT MUST BE EVEN.
+
+
+
+	 Caveats
+
+	 - If your program crashes on the first call into the library,
+	   you probably neglected to call hiinit().  You don't do any
+	   harm calling hiinit() even if a memory manager is not present,
+           so unconditionally executing it first is the way to go.
+	 - Avoid allocating small objects.  There are two reasons for
+	   this:
+		- MEM allocates memory in increments of 1K.
+		- Intel processors have a limited number of segments
+		  available (several thousand), so it is wise to
+		  allocate large chunks and dice them up using the
+		  offsets.
+	 - Check return values.  real2hi(), in particular, can catch
+	   protected-mode violations such as trying to write beyond a
+	   handle's allocated space.
+	 - Since DOS knows nothing about extended memory, it can't
+	   know to free allocated chunks of extended memory when your
+	   application exits.  You are responsible for hifree()'ing
+	   all the extended memory you allocate.
+
