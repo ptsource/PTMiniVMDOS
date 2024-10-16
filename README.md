@@ -42,7 +42,7 @@ PTSource MiniVMDOS is a professional operating system in the lineage of DOS oper
 * [PTSource Printer](https://wiki.ptsource.eu/soft/ptminivm/utilities) manager for host included
 * [PTSource Tools Disk](https://wiki.ptsource.eu/soft/mvmdos/tools_disk) hard drive tools included
 * [PTSource Guides](https://wiki.ptsource.eu/soft/mvmdos/guides) reader and compiler included
-* [PTSource Basic](https://wiki.ptsource.eu/filesdos) interpreter and compiler included
+* [PTSource Basic](https://wiki.ptsource.eu/files_dos) interpreter and compiler included
 * [PTSource X System](https://wiki.ptsource.eu/soft/mvmdos/x_system) included
 * DPMI support and VDM based multitasking
 * Multiuser session manager
