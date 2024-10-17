@@ -65,7 +65,7 @@ PTSource MiniVMDOS is a professional operating system in the lineage of DOS oper
 * PGPShell with PGP encryption
 * Dialog, BBOX
 * Samba Client
-* Lynx, Gopher, WGET, FTP, IRC and more...
+* Lynx, Gopher, WGET, Curl, FTP, IRC and more...
 * 100% Compatible with MS-DOS, PC-DOS, DR-DOS
 * Windows 3.11 Support
 
