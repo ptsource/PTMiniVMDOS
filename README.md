@@ -3,7 +3,7 @@
 DOS, or Disk Operating System, holds a significant place in computing history as one of the pioneering operating systems. Initially developed by Microsoft, it became ubiquitous in the 1980s and early 1990s, serving as the primary interface for personal computers. Characterized by its command-line interface, users interacted with DOS through typed commands, navigating file systems and executing programs. Despite its simplicity, DOS provided a robust platform for software development and application execution, laying the groundwork for the digital revolution. Its influence persists in modern computing, as DOS principles underpin many aspects of contemporary operating systems.
 
 # PTSource MiniVMDOS
-### Current version 7 updated 22/10/2024 for Windows
+### Current version 7 updated 28/10/2024 for Windows
 
 PTSource MiniVMDOS is a professional operating system in the lineage of DOS operating systems intended to run legacy software inside [PTSource MiniVM](https://wiki.ptsource.eu/soft/ptminivm/start) for Windows x86 and x64. Integrates transparent web and network access seamlessly into its familiar command-line interface. Moreover, it introduces native support for printing text to Windows printers, streamlining document management across platforms. With network support, users can effortlessly collaborate and share resources in real-time, enhancing productivity and efficiency.
 
