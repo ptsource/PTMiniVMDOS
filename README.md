@@ -53,7 +53,6 @@ PTSource MiniVMDOS is a professional operating system in the lineage of DOS oper
 * [MiniVMDOS RECALL Utility](https://wiki.ptsource.eu/soft/mvmdos/utilities)
 * [MiniVMDOS PTL Utility](https://wiki.ptsource.eu/soft/mvmdos/utilities)
 * [MiniVMDOS FILEC Utility](https://wiki.ptsource.eu/soft/mvmdos/utilities)
-* [MiniVMDOS DOSVER Utility](https://wiki.ptsource.eu/soft/mvmdos/utilities)
 * [MiniVMDOS User Manager](https://wiki.ptsource.eu/soft/mvmdos/utilities)
 * [MiniVMDOS Precision Pointer Mouse Driver](https://wiki.ptsource.eu/soft/mvmdos/utilities)
 * [MiniVMDOS Enhanced Disk Performance Driver](https://wiki.ptsource.eu/soft/mvmdos/utilities)
