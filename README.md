@@ -60,7 +60,8 @@ PTSource MiniVMDOS is a professional operating system in the lineage of DOS oper
 * Joe and VIM Editor with CTAGS and XXD
 * NASM
 * Python
-* Tcl
+* Perl
+* TclSH
 * Bash, CSH and CMD interpreters
 * Mutt email client
 * PGPShell with PGP encryption
