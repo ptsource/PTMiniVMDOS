@@ -56,6 +56,8 @@ PTSource MiniVMDOS is a professional operating system in the lineage of DOS oper
 * [MiniVMDOS User Manager](https://wiki.ptsource.eu/soft/mvmdos/utilities)
 * [MiniVMDOS Precision Pointer Mouse Driver](https://wiki.ptsource.eu/soft/mvmdos/utilities)
 * [MiniVMDOS Enhanced Disk Performance Driver](https://wiki.ptsource.eu/soft/mvmdos/utilities)
+* [MiniVMDOS Clipboard Driver](https://wiki.ptsource.eu/soft/mvmdos/utilities)
+* [Online Help System](https://wiki.ptsource.eu/soft/mvmdos/tutorial)
 * UNIX and CMD style commands
 * ZIP & UNZIP
 * ARJ & UNARJ
