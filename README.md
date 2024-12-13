@@ -19,7 +19,7 @@ PTSource MiniVMDOS is a professional operating system in the lineage of DOS oper
 <img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/01B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/02B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/03B.PNG" width="33%">
 <img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/04B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/05B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/06B.PNG" width="33%">
 
-## Emulated Hardware
+## PTSource MiniVM Emulated Hardware
 * Intel Pentium MMX Processor at 580 MHz
 * 64Mb SDRAM (default) 128Mb SDRAM (using the --extramem switch)
 * S3 ViRGE graphics chipset
