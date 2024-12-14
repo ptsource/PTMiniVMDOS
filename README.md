@@ -18,6 +18,7 @@ PTSource MiniVMDOS is a professional operating system in the lineage of DOS oper
 ## Screenshots
 <img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/01B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/02B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/03B.PNG" width="33%">
 <img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/04B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/05B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/PTMiniVMDOS/master/images/06B.PNG" width="33%">
+## Note
 Although PTSource MiniVMDOS is a real DOS system and can be installed in real hardware with the provided tools disk, it comes preconfigured and optimized for PTSource MiniVM.
 ## PTSource MiniVM Emulated Hardware
 * Intel Pentium MMX Processor at 580 MHz
